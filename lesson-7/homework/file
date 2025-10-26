@@ -2,13 +2,13 @@ Find the minimum price of a product in the Products table
 select minN(Price) as MinPrice FROM Products;
 Find the maximum salary from the Employees table
 select max(Salary) as MaxSalary from Employees
-⃣ Count the number of rows in the Customers table
+Count the number of rows in the Customers table
 SELECT COUNT(*) AS TotalCustomers
 FROM Customers;
 ️⃣ Count the number of unique product categories from the Products table
 SELECT COUNT(DISTINCT Category) AS UniqueCategories
 FROM Products;
-⃣ Find the total sales amount for the product with ID = 7 in the Sales table
+Find the total sales amount for the product with ID = 7 in the Sales table
 
 
 SELECT SUM(TotalAmount) AS TotalSalesForProduct7
@@ -16,7 +16,7 @@ FROM Sales
 WHERE ProductID = 7;
 
 
-⃣ Calculate the average age of employees in the Employees table
+Calculate the average age of employees in the Employees table
 
 
 SELECT AVG(DATEDIFF(YEAR, BirthDate, GETDATE())) AS AverageAge
